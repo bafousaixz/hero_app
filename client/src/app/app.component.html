@@ -1,0 +1,27 @@
+<!-- <h1>{{title}}</h1>
+<nav>
+    <a routerLink="/heroes">Heroes </a>
+    <a routerLink="/dashboard/">Dashboard</a>
+    <a routerLink="/add/">Add Hero</a>
+</nav> -->
+
+<div class="top">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">
+        <a routerLink="/heroes"><img src="../assets/logo.png" /> </a></label>
+    <ul>
+        <li><a routerLink="/heroes">Heroes </a></li>
+        <li><a routerLink="/dashboard/">Dashboard</a></li>
+        <li><a routerLink="/add/">Add Hero</a></li>
+    </ul>
+    <!-- <div class="note">
+        <h1>best of coffee & drinks</h1>
+        <p>thôn Lý Hòa, xã Nhơn Lý, tp Quy Nhơn</p> 
+    </div> -->
+</div>
+
+
+<router-outlet></router-outlet>

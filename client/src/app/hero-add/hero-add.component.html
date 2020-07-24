@@ -1,0 +1,56 @@
+<div style="text-align: center;" class="col-md-8">
+    <h1>ADD HERO</h1>
+
+    <div class="form-group row">
+      <label for="example-text-input" class="col-2 col-form-label">
+        Id:
+      </label>
+      <div class="col-10">
+        <input [(ngModel)]="id"  [ngModelOptions]="{standalone: true}" class="form-control" type="text"
+          id="example-text-input" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="example-text-input" class="col-2 col-form-label">
+        Name:
+      </label>
+      <div class="col-10">
+        <input [(ngModel)]="name"  [ngModelOptions]="{standalone: true}" class="form-control" type="text"
+          id="example-text-input-1" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="example-email-input" class="col-2 col-form-label">
+        Email:
+      </label>
+      <div class="col-10">
+        <input [(ngModel)]="email"  [ngModelOptions]="{standalone: true}" class="form-control" type="email"
+          id="example-email-input-2" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="example-tel-input" class="col-2 col-form-label">
+        Tel:
+      </label>
+      <div class="col-10">
+        <input [(ngModel)]="phone"  [ngModelOptions]="{standalone: true}" class="form-control" type="tel" 
+          id="example-tel-input-3" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="example-tel-input" class="col-2 col-form-label">
+        Adress:
+      </label>
+      <div class="col-10">
+        <input [(ngModel)]="adress"  [ngModelOptions]="{standalone: true}" class="form-control" type="tel" 
+          id="example-tel-input-4" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-10 offset-2">
+        <a routerLink="/heroes"><button (click)="addHero()" class="btn btn-primary">Submit</button></a>
+      </div>
+    </div>
+  
+  </div>
+  

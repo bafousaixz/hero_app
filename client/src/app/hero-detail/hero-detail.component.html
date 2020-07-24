@@ -1,0 +1,81 @@
+<div class="khung" *ngIf = " hero">
+  <h1>{{hero.name}}</h1>
+
+<div class="tt">
+  <label for="example-text-input" class="col-2 col-form-label">
+    Email: {{hero.email}}
+  </label><br/>
+  <label for="example-text-input" class="col-2 col-form-label">
+    Tel: {{hero.phone}}
+  </label><br/>
+  <label for="example-text-input" class="col-2 col-form-label">
+    Adress: {{hero.adress}}
+  </label>
+</div>
+
+<button (click)="Edit()" style="margin-bottom: 30px; margin-right: 30px">Edit</button>
+<a routerLink="/heroes"><button (click)="delete(hero._id)" >Delete</button></a>
+
+
+
+
+<div *ngIf="check" class="col-md-8">
+  <h1>EDIT HERO</h1>
+
+  <div  class="form-group row">
+    <label  for="example-text-input" class="col-2 col-form-label">
+      Id:
+    </label>
+    <div class="col-10">
+      <input [(ngModel)]="hero.id" class="form-control" type="text"
+        id="example-text-input-1" >
+    </div>
+  </div>
+  <div  class="form-group row">
+    <label for="example-text-input" class="col-2 col-form-label">
+      Name:
+    </label>
+    <div class="col-10">
+      <input [(ngModel)]="hero.name" class="form-control" type="text"
+        id="example-text-input-2" >
+    </div>
+  </div>
+  <div   class="form-group row">
+    <label for="example-email-input" class="col-2 col-form-label">
+      Email:
+    </label>
+    <div class="col-10">
+      <input [(ngModel)]="hero.email" class="form-control" type="email"
+        id="example-email-input-3" >
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-tel-input" class="col-2 col-form-label">
+      Tel:
+    </label>
+    <div class="col-10">
+      <input [(ngModel)]="hero.phone" class="form-control" type="tel" 
+        id="example-tel-input-4" >
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-tel-input" class="col-2 col-form-label">
+      Adress:
+    </label>
+    <div class="col-10">
+      <input [(ngModel)]="hero.adress" class="form-control" type="tel" 
+        id="example-tel-input-5" >
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-10 offset-2">
+      <button (click)="Update()" class="btn btn-primary"
+        >Submit</button>
+    </div>
+  </div>
+
+</div>
+
+
+
+</div>

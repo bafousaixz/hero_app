@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+h1{
+  font-family: 'Permanent Marker', cursive;
+}
+label {
+  /* //display: inline-block; */
+  width: 3em;
+  margin: .5em 0;
+  color: #607D8B;
+  font-weight: bold;
+}
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+}
+button{
+  margin-top: 20px;
+  border: none;
+  outline:none;
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #5a842a;
+  font-size: 18px;
+  border-radius: 40px;
+  box-shadow: -2px -2px 8px rgba(255,255,255,1),
+              -2px -2px 8px rgba(255,255,255,0.5),
+              inset 2px 2px 4px rgba(255,255,255,0.1),
+              2px 2px 8px rgba(0,0,0,0.15) ;
+}
+button:hover{
+  box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
+              inset -2px -2px 8px rgba(255,255,255,0.5),
+              inset 2px 2px 4px rgba(255,255,255,0.1),
+              inset 2px 2px 8px rgba(0,0,0,0.15) ;
+}
+
+button:hover span{
+  display: inline-block;
+  transform: scale(0.98);
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+.tt{
+  height: 150px;
+  display: block;
+  border: 2px solid steelblue;
+  margin: 0 20%;
+}
+.tt label{
+  margin-left: 30px;
+  text-align: center;
+  line-height: 50px;
+}
+.khung{
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border: 1px solid springgreen;
+  text-align: center;
+  background: #f2f3f7;
+}
+
