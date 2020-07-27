@@ -12,6 +12,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroAddComponent } from './hero-add/hero-add.component';
+import { TestDirective } from './test.directive';
+import { TestPipe } from './test.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HeroAddComponent } from './hero-add/hero-add.component';
     HeroesComponent,
     HeroDetailComponent,
     DashboardComponent,
-    HeroAddComponent
+    HeroAddComponent,
+    TestDirective,
+    TestPipe
   ],
   imports: [
     BrowserModule,
