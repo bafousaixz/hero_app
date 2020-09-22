@@ -8,7 +8,8 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  public hero: Hero;
+  public s: String;
+  public hero: Hero;  
   heroes: Hero[]; 
   selectedHero: Hero;
 
